@@ -1,10 +1,18 @@
 <h1> URL Shortener </h1>
 
-<%= form_with model: Link.new do |form| %>
-  <div class="flex gap-2 items-center">
-    <%= form.url_field :url, required: true, autofocus: true, placeholder: "https://shrek.com", class: "flex-grow rounded" %>
-    <%= form.button "Save", class: "px-3 py-2 bg-gray-100 rounded" %>
-  </div>
-<% end %>
+<select class="js-example-basic-single" name="state">
+  <option value="AL">Alabama</option>
+  <option value="WY">Wyoming</option>
+</select>
 
-<%= render @links %>
+<script>
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+</script>
+
+<%= render partial: "form", locals: {link: @link} %>
+
+<div id = "links" class="mt-8 flex flex-col gap-4 divide-y divide-gray-100">
+  <%= render @links %>
+</div>
