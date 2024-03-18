@@ -8,11 +8,14 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
 
-     <%= javascript_include_tag 'https://code.jquery.com/jquery-3.6.0.min.js' %>
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.6.0.min.js' %>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>

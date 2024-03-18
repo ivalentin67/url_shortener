@@ -8,3 +8,6 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 
 pin "chartkick", to: "chartkick.js"
 pin "Chart.bundle", to: "Chart.bundle.js"
+pin "clipboard" # @2.0.11
+pin "chosen" # @0.0.2
+pin "process" # @2.0.1
